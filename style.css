@@ -1,0 +1,76 @@
+.Our_Menu{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.tables{
+    display: flex;
+    justify-content: space-between;
+    max-width: 850px;
+    margin: auto;
+
+}
+
+.tables .chicken{
+    margin-right: 15px;
+    flex-basis: 50%;
+    background-color: #a2a2a2;
+    border: 2px solid #000;
+}
+
+.tables .beef{
+    margin left: 15px;
+    flex-basis: 50%;
+    background-color: #a2a2a2;
+    border: 2px solid #000;
+    font-size: 15px;
+}
+
+.sushi{
+    margin-left: 15px;
+    margin left: 15px;
+    max-width: 850px;
+    background-color: #a2a2a2;
+    border: 2px solid #000;
+    font-size: 15px;
+    margin: auto;
+    margin-top: 30px;
+
+}
+
+.btn{
+    justify-content: flex-end;
+    display: flex;
+}
+
+button{
+    padding: 5px 50px;
+    border-top: 0;
+    border-right: 0;
+
+}
+
+.tables .beef .btn button{
+    background-color: yellow;
+
+}
+
+.tables .chicken .btn button{
+    background-color: antiquewhite;
+}
+
+
+.txt{
+    margin: 0px 30px;
+}
+
+button:focus{
+    outline: 0;
+}
+
+.sushi button{
+    background-color: rgb(161, 248, 197);
+}
+
