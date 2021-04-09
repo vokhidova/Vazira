@@ -1,152 +1,76 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-}
-body{
-    font-family: 'Comfortaa', cursive;  
-}
-.bc-orange{
-    background-color: #f0932b;
-}
-.bc-light-blue{
-    background-color: #7ed6df;
-}
-.bc-light-red{
-    background-color: #ff7979;
-}
-.bc-green{
-    background-color: #badc58;
-}
-.bc-orange:hover{
-    background-color: rgba(240, 147, 43, .5);
-}
-.bc-light-blue:hover{
-    background-color: rgba(126, 214, 223, .5);
-}
-.bc-light-red:hover{
-    background-color: rgba(255, 121, 121, .5);
-}
-.bc-green:hover{
-    background-color: rgba(186, 220, 88, .5);
-}
-header{
-    background-image: url("images/chef-icon.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 100px 0px;
+.Our_Menu{
     text-align: center;
-}
-.company-name{
-    font-size: 60px;
-}
-.slogan{
-    font-weight: 600px;
-}
-nav{
-    width: 80%;
-    margin: 50px auto;
-    border-top: 1px solid rgba(0, 0, 0, .3);
-    border-bottom: 1px solid rgba(0, 0, 0, .3);
-    text-align: center;
-}
-.nav-item{
-    display: inline-block;
-}
-.nav-link{
-    display: inline-block;
-    padding: 20px 40px;
-    text-decoration: none;
-    color: rgba(0, 0, 0, .8);
-    text-transform: uppercase;
-    transition: .6s;
-}
-.nav-link:hover{
-    background-color: rgba(0, 0, 0, .3);
-}
-.main{
-    text-align: center;
-}
-.recipes-list{
-    width: 80%;
-    margin: 0 auto;
-    text-align: left;
-}
-.recipe-item{
-    width: 30%;
-    margin: 10px 2.2%;
-    margin-bottom: 20px;
-    display: inline-block;
-   
-}
-.recipe-item:nth-child(1),
-.recipe-item:nth-child(4){
-    margin-left: 0;
-}
-.recipe-item:nth-child(3),
-.recipe-item:nth-child(6){
-    margin-right: 0;
-}
-.recipe-img{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-.recipe-category{
-    text-decoration: none;
-    color: white;
-    display: inline-block;
-    padding: 5px 10px;
-    text-transform: uppercase;
-    font-size: 12px;
+    font-size: 25px;
     font-weight: bold;
-    margin-top: 10px;
+    padding-bottom: 30px;
 }
-.recipe-title-link{
-    text-decoration: none;
-    color: black;
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 12px;
-    margin: 15px 0;
+
+.tables{
+    display: flex;
+    justify-content: space-between;
+    max-width: 850px;
+    margin: auto;
+
 }
-.recipe-title-link:hover{
-    color: #ff7979;
+
+.tables .chicken{
+    margin-right: 15px;
+    flex-basis: 50%;
+    background-color: #a2a2a2;
+    border: 2px solid #000;
 }
-.all-recipes{
-    text-decoration: none;
-    border: 2px solid #ff7979;
-    color: #ff7979;
-    display: inline-block;
-    padding: 15px 30px;
-    margin: 40px 0;
+
+.tables .beef{
+    margin left: 15px;
+    flex-basis: 50%;
+    background-color: #a2a2a2;
+    border: 2px solid #000;
+    font-size: 15px;
 }
-.all-recipes:hover{
-    background-color: #ff7979;
-    color: white;
+
+.sushi{
+    margin-left: 15px;
+    margin left: 15px;
+    max-width: 850px;
+    background-color: #a2a2a2;
+    border: 2px solid #000;
+    font-size: 15px;
+    margin: auto;
+    margin-top: 30px;
+
 }
-.form{
-    background-image: url(images/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: -30px;
-    padding: 100px 0;
-    text-align: center;
+
+.btn{
+    justify-content: flex-end;
+    display: flex;
 }
-.email-input{
-    padding: 10px 20px;
-    width: 400px;
-    border: none;
-    margin-right: 20px;
+
+button{
+    padding: 5px 50px;
+    border-top: 0;
+    border-right: 0;
+
 }
-.email-submit{
-    background-color: #fd3535;
-    color: white;
-    padding: 10px 40px;
-    border: none;
-    font-weight: bold;
-}.subscribe{
-    color: white;
-    margin top: 40px;
+
+.tables .beef .btn button{
+    background-color: yellow;
+
 }
+
+.tables .chicken .btn button{
+    background-color: antiquewhite;
+}
+
+
+.txt{
+    margin: 0px 30px;
+}
+
+button:focus{
+    outline: 0;
+}
+
+.sushi button{
+    background-color: rgb(161, 248, 197);
+}
+
