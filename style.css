@@ -1,76 +1,82 @@
-.Our_Menu{
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    padding-bottom: 30px;
+body,*{
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
 }
-
-.tables{
+.menu{
+    background-color: #ddd;
+    width: 100%;
+    height: 60px;
+}
+.menu .container{
+    max-width: 400px;
+    margin: auto;
+}
+.menu .container .row{
     display: flex;
     justify-content: space-between;
-    max-width: 850px;
-    margin: auto;
-
+    padding-top: 10px;
 }
-
-.tables .chicken{
-    margin-right: 15px;
-    flex-basis: 50%;
-    background-color: #a2a2a2;
-    border: 2px solid #000;
+.menu .container .row .food{
+    font-size: 30px;
 }
-
-.tables .beef{
-    margin left: 15px;
-    flex-basis: 50%;
-    background-color: #a2a2a2;
-    border: 2px solid #000;
-    font-size: 15px;
+.menu .container .row .btn button {
+    background-color: unset;
+    border: 0;
+    display: block;
 }
-
-.sushi{
-    margin-left: 15px;
-    margin left: 15px;
-    max-width: 850px;
-    background-color: #a2a2a2;
-    border: 2px solid #000;
-    font-size: 15px;
-    margin: auto;
-    margin-top: 30px;
-
+.menu .container .row .btn button span{
+    background-color: black;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 4px;
+    margin-top: 6px;
 }
-
+.menu .container .row .btn button span::before{
+    background-color: black;
+    content: '';
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    top: 10px;
+    display: block;
+}
+.menu .container .row .btn button span::after{
+    background-color: black;
+    content:'';
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: -20px;
+    display: block;
+}
 .btn{
-    justify-content: flex-end;
-    display: flex;
+    border: 2px solid #000;
+    border-radius: 8px;
+    margin-bottom: -7px;
 }
-
-button{
-    padding: 5px 50px;
-    border-top: 0;
-    border-right: 0;
-
-}
-
-.tables .beef .btn button{
-    background-color: yellow;
-
-}
-
-.tables .chicken .btn button{
-    background-color: antiquewhite;
-}
-
-
-.txt{
-    margin: 0px 30px;
-}
-
 button:focus{
     outline: 0;
 }
-
-.sushi button{
-    background-color: rgb(161, 248, 197);
+table{
+    border-collapse: collapse;
+    position: absolute;
+    top: -150px;
+    z-index: -1;
 }
-
+.table{
+    position: relative;
+}
+table.active{
+    top: 0;
+    transition: 0.5s;
+}
+th{
+    padding: 10px 0px;
+}
+<script>
+    document.querySelector('button').addEventListener('click',function(){
+    document.querySelector('table').classList.toggle('active')
+}) 
+</script>
